@@ -1,0 +1,41 @@
+body{
+  margin: 0;
+}
+
+li,ul{
+  text-decoration: none;
+  list-style: none;
+}
+
+
+.top-bar{
+  width: auto;
+  height: 100px;
+}
+
+.name-section{
+  width: auto;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.top-bar > nav{
+  /* height: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.top-bar > nav > ul{
+  display: flex;
+}
+
+ul> li{
+  margin-right: 50px;
+}
+
+.about-section{
+  border: 1px solid red;
+  height: 500px;
+}

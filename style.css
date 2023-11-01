@@ -1,3 +1,7 @@
+html{
+  font-family: 'Roboto Slab', serif;
+}
+
 body{
   margin: 0;
   color: 303030;
@@ -107,8 +111,128 @@ ul> li{
 .about-section{
   border: 1px solid red;
   text-align: center;
+  height: 300px;
 }
 
 .about-title{
   font-size: 30px;
+}
+
+.self-Introduction{
+  font-size: 16px;
+}
+
+.Education-section{
+  border: 1px solid red;
+  height: 557px;
+  text-align: center;
+}
+
+.Education-title{
+  font-size: 30px;
+  /* border: 1px solid orange; */
+}
+
+.Education-box{
+  /* border: 1px solid orange; */
+  height: 460px;
+  display: flex; justify-content: center; 
+  align-items: center;
+}
+
+.UCI{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  height: 300px; width: 800px;
+  display: flex;
+  text-align: left;
+}
+
+.UCI-logo{
+  /* border: 1px solid green; */
+  /* flex-grow: 1; flex-basis: 0; */
+  width: 300px;
+  object-fit: cover;
+}
+
+.UCI-logo > img {
+  width: 300px;
+}
+
+.degree-box{
+  display: flex; flex-grow: 1;
+  flex-basis: 0;
+  /* border: 1px solid purple; */
+  align-items: center;
+}
+
+.degree{
+  margin-left: 20px;
+  /* border: 1px solid green; */
+  /* flex-grow: 1; flex-basis: 0; */
+}
+
+.degree > p{
+  font-size: 25px;
+}
+
+.Skills-section{
+  border: 1px solid red;
+  height: 800px;
+
+}
+
+.Skills-title{
+  font-size: 30px;
+  border: 1px solid orange;
+  display: flex;
+  justify-content: center;  align-items: center;
+}
+
+.skill-box-section{
+  /* border: 1px solid orange; */
+  height: 700px;
+  display: flex;
+  justify-content: center; align-items: center;
+}
+
+.skill-box{
+  border: 1px solid green;
+  height: 500px; width: 800px;
+}
+
+.row1,.row3{
+  border: 1px solid blue;
+  height: 165px; width: 800px;
+  display: flex;
+}
+
+.row2,.row4{
+  border: 1px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 55px;
+  font-size: 20px;
+}
+
+.row2 span{
+  margin-right:36px;
+  margin-left: 40px;
+}
+
+.skill{
+  border: 1px solid purple;
+  flex-grow: 1; flex-basis: 0;
+  width: 100px; 
+  margin: 10px; border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; align-items: center;
+}
+
+.fa-brands{
+  font-size: 80px;
+  flex-basis: 0;
 }

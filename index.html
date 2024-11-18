@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Minkyung Kim">
+  <meta name="description" content="portfolio of my resume">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- external links  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-
+    
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  <meta property="og:title" content="Kim, Minkyung - Resume">
-  <meta property="og:description" content="portfolio about my Resume">
-  <meta property="og:image" content="/preview.png">
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <title>Kim, Minkyung - Resume</title>
 </head>
 <body>
   <div class="top-bar">
-    <div class="name-section">Minkyung (Kelly) Kim</div>
-      <nav>
-        <ul>
-          <li>About</li>
-          <li>Education</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Leadership</li>
-        </ul>
-      </nav>
+      <div class="name-top">
+        <div class="name-section">Minkyung (Kelly) Kim</div>
+      </div>
+        <nav>
+          <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Project">Projects</a></li>
+            <li><a href="#Leadership">Leadership</a></li>
+          </ul>
+        </nav>
   </div>
-  <div class="profile-section">
+<div class="profile-section" id="profile">
     <div class="profile-box">
       <div class="profile-img">
         <img src="profile-pic.png" alt="Profile_pic">
@@ -47,25 +53,37 @@
           <p class="title">Phone</p>
           <p>918-568-3163</p>
         </div>
-        <div class="linked-in">
-          <p class="title">Linked In</p>
-          <a href="#">address</a>
+        <div class="link">
+          <!-- <p class="title">Linked In</p> -->
+          
+          <div class="link_container linked_In">
+            <a href="https://www.linkedin.com/in/minkyung-kim116/" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <div class="link_container resume_downlad">
+            <a href="/Users/kellykim/Documents/GitHub/a1-personal-website-Mink02/Kim,_Minkyung_Resume.pdf" download="Kim_Minkyung_Resume.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down"></i>Download Resume</a>
+          </div>
+          
+          
         </div>
       </div>
     </div>
   </div>
-  <div class="about-section">
+  <div class="about-section" id="about">
     <div class="about-title">
       <p>About Me</p>
     <div class="self-Introduction">
-      <p>Short Introduction about myself</p>
+      <p>Hi, I'm Minkyung Kim. You can call me Kelly.</p>
+      <p>I'm currently a 3rd-year CS major at UCI.</p>
+      <p>As a third-year Computer Science major,</p>
+      <p>I am passionate about software development</p>
+      <p>and Front-end development.</p>
     </div>
     </div>
     <div class="about-box">
 
     </div>
   </div>
-  <div class="Education-section">
+<div class="Education-section" id="Education">
     <div class="Education-title"> <p>Education</p> </div>
     <div class="Education-box">
       <div class="UCI">
@@ -86,38 +104,105 @@
       </div>
     </div>
   </div>
-  <div class="Skills-section">
+  <div class="Skills-section" id="Skills"> 
     <div class="Skills-title"> <p>Skills</p> </div>
-    <div class="skill-box-section">
-      <div class="skill-box">
-        <div class="rows-1 row1">
-          <div class="skills-1 skill">
-            <i class="fa-brands fa-html5" style="color: #ffaa00;"></i>
-          </div>
-          <div class="skills-2 skill">
-            <i class="fa-brands fa-css3-alt" style="color: #0061ff;"></i>
-          </div>
-          <div class="skills-3 skill"></div>
-          <div class="skills-4 skill"></div>
-          <div class="skills-5 skill"></div>
-          <div class="skills-6 skill"></div>
+    <div class="container">
+      <div class="row first-row">
+        <div class="col-sm d-flex align-items-stretch flex-column text-center">
+          <i class="fa-brands fa-html5" style="color: #E44D26;"></i>
+          <div>HTML</div>
         </div>
-        <div class="rows-2 row2">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>Figma</span>
-          <span>React</span>
-          <span>Python</span>
-          <span>SQLite</span>
+        <div class="col-sm d-flex align-items-stretch flex-column text-center">
+          <i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i>
+          <div>CSS</div>
         </div>
-        <div class="rows-3 row3"></div>
-        <div class="rows-4 row4"></div>
+        <div class="col-sm d-flex align-items-stretch flex-column text-center">
+          <i class="fa-brands fa-figma" style="color: #d281c1;"></i>
+          <div>Figma</div>
+        </div>
+        <div class="col-sm d-flex align-items-stretch flex-column text-center">
+          <i class="fa-brands fa-react" style="color: #61DAFB;"></i>
+          <div>React</div>
+        </div>
+        <div class="col-sm d-flex align-items-stretch flex-column text-center">
+          <i class="fa-brands fa-python" style="color: #3776AB;"></i>
+          <div>Python</div>
+        </div>
+        <!--second row  -->
+      </div>
+      <div class="row second-row">
+        <div class="col-sm d-flex align-items-stretch flex-column text-center">
+          <i class="fa-solid fa-c" style="color: #044F88" ></i>
+          <div>C++</div>
+        </div>
+        <div class="col-sm d-flex align-items-stretch flex-column text-center">
+          <i class="fa-solid fa-c" style="color: #044F88"></i>
+          <div>C Lang</div>
+        </div>
+        <div class="col-sm d-flex align-items-stretch flex-column text-center">
+          <i class="fa-solid fa-database"></i>
+          <div>SQLite</div>
+        </div>
+        <div class="col-sm d-flex align-items-stretch flex-column text-center">
+          <i class="fa-solid fa-database"></i>
+          <div>MySQL</div>
+        </div>
+        <div class="col-sm d-flex align-items-stretch flex-column text-center">
+          <i class="fa-brands fa-github" style="color: #6e5494;"></i>
+          <div>GitHub</div>
+        </div>
+    </div>
 
       </div>
     </div>
+
+  <div class="project-section" id="Project"> 
+    <div class="Project-title"> <p>Projects</p> </div>
+    <div class="Project-box">
+      <div class="project1">
+        <div class="p1-img">
+          <img src="p1.avif" alt="project1">
+        </div>
+        <div class="explain-project">
+          <div class="explain">
+            <p>AeroDB: Airport Data Solution</p>
+            <span>Use pyhon to implement SQLite data console by</span>
+            <br>
+            <span>writing SQL queries to retrieve, update, and</span>
+            <br> 
+            <span>maitain daya tat is entered and required to pull out </span>
+            <br>
+            <span>from the database.</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
   </div>
-  <div class="project-section">
-    
+  <div class="leadership-section" id="Leadership"> 
+    <div class="Leadership-title"> <p>Leadership</p> </div>
+    <div class="Leadership-box">
+      <div class="Leadership1">
+        <div class="Likelion">
+          <img src="LLUS_LOGO.png" alt="LLUS logo">
+        </div>
+        <div class="explain-experience">
+          <div class="experience">
+            <p>LikeLion (LLUS) X UCI </p>
+            <span class="title">Vice-president</span>
+            <br>
+            <span>Coordinate membership recruitment and onboarding processes,</span>
+            <br> 
+            <span>including application reviews, interviewm and orientations, </span>
+            <br>
+            <span>to attrac passionate and dedicated individuals aligned</span>
+            <br>
+            <span>with the club's mission and values.</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
   </div>
 </body>
 </html>

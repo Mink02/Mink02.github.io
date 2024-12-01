@@ -1,111 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="author" content="Minkyung Kim">
-  <meta name="description" content="portfolio of my resume">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <!-- external links  -->
+  <title>Kelly kim</title>
+  <!-- js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- icon links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-    
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-  <title>Kim, Minkyung - Resume</title>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
 </head>
 <body>
-  <div class="top-bar">
-      <div class="name-top">
-        <div class="name-section">Minkyung (Kelly) Kim</div>
-      </div>
-        <nav>
-          <ul>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#Education">Education</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Project">Projects</a></li>
-            <li><a href="#Leadership">Leadership</a></li>
-          </ul>
-        </nav>
-  </div>
-<div class="profile-section" id="profile">
-    <div class="profile-box">
-      <div class="profile-img">
-        <img src="profile-pic.png" alt="Profile_pic">
-      </div>
-      <div class="profile">
-        <div class="name">
-          <p class="title">Name</p>
-          <p>Minkyung (Kelly) Kim</p>
-        </div>
-        <div class="email">
-          <p class="title">Email</p>
-          <p>mink020116@gmail.com</p>
-        </div>
-        <div class="phone">
-          <p class="title">Phone</p>
-          <p>918-568-3163</p>
-        </div>
-        <div class="link">
-          <!-- <p class="title">Linked In</p> -->
-          
-          <div class="link_container linked_In">
-            <a href="https://www.linkedin.com/in/minkyung-kim116/" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
-          <div class="link_container resume_downlad">
-            <a href="/Users/kellykim/Documents/GitHub/a1-personal-website-Mink02/Kim,_Minkyung_Resume.pdf" download="Kim_Minkyung_Resume.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down"></i>Download Resume</a>
-          </div>
-          
-          
-        </div>
-      </div>
+  <div class="topbar bg-151938">
+    <div class="name-section"><span>Kelly's Portfolio</span></div>
+    <div class="nav-bar-section">
+      <nav>
+        <ul>
+          <li><a href="#About">About Me</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Project">Projects</a></li>
+          <li><a href="#Leadership">Leadership</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
-  <div class="about-section" id="about">
-    <div class="about-title">
-      <p>About Me</p>
-    <div class="self-Introduction">
-      <p>Hi, I'm Minkyung Kim. You can call me Kelly.</p>
-      <p>I'm currently a 3rd-year CS major at UCI.</p>
-      <p>As a third-year Computer Science major,</p>
-      <p>I am passionate about software development</p>
-      <p>and Front-end development.</p>
-    </div>
-    </div>
-    <div class="about-box">
-
-    </div>
-  </div>
-<div class="Education-section" id="Education">
-    <div class="Education-title"> <p>Education</p> </div>
-    <div class="Education-box">
-      <div class="UCI">
-        <div class="UCI-logo">
-          <img src="UCI-logo.png" alt="uci logo">
+  <div class="profile" id="About">
+    <div class="profile-section" id="profile">
+      <div class="profile-box">
+        <div class="profile-img">
+          <img src="profile-pic.png" alt="Profile_pic">
         </div>
-        <div class="degree-box">
-          <div class="degree">
-            <p>UC, Irvine</p>
-            <span>Bachelor's of Science in Computer Science</span>
-            <br> <br>
-            <span>Expected Graduation June 2025</span>
-            <br> <br>
-            <span>GPA: 3.7 / 4.0</span>
+        <div class="profile-content">
+          <div class="name">
+            <p class="title">Name</p>
+            <p>Minkyung (Kelly) Kim</p>
+          </div>
+          <div class="email">
+            <p class="title">Email</p>
+            <p>mink020116@gmail.com</p>
+          </div>
+          <div class="phone">
+            <p class="title">Phone</p>
+            <p>918-568-3163</p>
+          </div>
+          <div class="link">
+            <!-- <p class="title">Linked In</p> -->
+            
+            <div class="link_container linked_In">
+              <a href="https://www.linkedin.com/in/minkyung-kim116/" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="link_container resume_downlad">
+              <a href="/Users/kellykim/Documents/GitHub/a1-personal-website-Mink02/Kim,_Minkyung_Resume.pdf" download="Kim_Minkyung_Resume.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down"></i>Download Resume</a>
+            </div>
+            
+            
           </div>
         </div>
-        
+      </div>
+    </div>
+    <div class="about-section" id="about">
+      <div class="about-title fc-151938">
+        <p>About Me</p>
+      <div class="self-Introduction">
+        <p>UC, irvine - B.S. in Computer Science, Informatics minor</p>
+        <p>Vice president @ LLUS X UCI</p>
+        <p>mentor @ WICS mentorship</p>
+        <p>Front-end | Back-end | Fullstack | ESP32</p>
+      </div>
+      </div>
+      <div class="about-box">
+  
       </div>
     </div>
   </div>
   <div class="Skills-section" id="Skills"> 
-    <div class="Skills-title"> <p>Skills</p> </div>
+    <div class="Skills-title fc-151938"> <p>Skills</p> </div>
     <div class="container">
       <div class="row first-row">
         <div class="col-sm d-flex align-items-stretch flex-column text-center">
@@ -152,35 +129,206 @@
           <div>GitHub</div>
         </div>
     </div>
-
+    <div class="row third-row">
+      <div class="col-sm d-flex align-items-stretch flex-column text-center">
+        <i class="fa-brands fa-java" style="color: #0042aa;"></i>
+        <div>Java</div>
+      </div>
+      <div class="col-sm d-flex align-items-stretch flex-column text-center">
+        <i class="fa-brands fa-js" style="color: #FFD43B;"></i>        <div>JS</div>
+      </div>
+      <div class="col-sm d-flex align-items-stretch flex-column text-center">
+        <i class="fa-brands fa-aws" style="color: #ffaa00;"></i>        <div>AWS</div>
+      </div>
+      <div class="col-sm d-flex align-items-stretch flex-column text-center">
+        <i class="fa-solid fa-microchip" style="color: #0056d6;"></i>
+        <div>Plaform.io</div>
+      </div>
+      <div class="col-sm d-flex align-items-stretch flex-column text-center">
+        <i class="fa-brands fa-angular" style="color: #ff4013;"></i>        <div>Angular</div>
+      </div>
+  </div>
       </div>
     </div>
-
-  <div class="project-section" id="Project"> 
-    <div class="Project-title"> <p>Projects</p> </div>
-    <div class="Project-box">
-      <div class="project1">
-        <div class="p1-img">
-          <img src="p1.avif" alt="project1">
-        </div>
-        <div class="explain-project">
-          <div class="explain">
-            <p>AeroDB: Airport Data Solution</p>
-            <span>Use pyhon to implement SQLite data console by</span>
-            <br>
-            <span>writing SQL queries to retrieve, update, and</span>
-            <br> 
-            <span>maitain daya tat is entered and required to pull out </span>
-            <br>
-            <span>from the database.</span>
+  <div class="project-section" id="Project">
+    <div class="Project-title fc-151938"> <p>Projects</p> </div>
+    <div class="art-slide-box">
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide ss-1">
+              <div class="project-container">
+                <div class="project1">
+                  <div class="explain-project">
+                    <div class="explain">
+                      <p>Step Counter</p>
+                      <span>Use: C, ESP32, Bluetooth, Accelerometer</span>
+                      <br>
+                      <span>Designed a step counter system </span>
+                      <br> 
+                      <span>using the ESP32 board and an accelerometer  </span>
+                      <br>
+                      <span>to accurately measure steps and transmit data to a phone via Bluetooth</span>
+                      <br> 
+                      <span>using the ESP32 board and an accelerometer  </span>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="project1">
+                  <div class="explain-project">
+                    <div class="explain">
+                      <p>Highway Traffic Light</p>
+                      <span>Use: C ,LED, ESP32, buzzer, button</span>
+                      <br>
+                      <span>Designed and implemented a simplified  </span>
+                      <br> 
+                      <span>traffic light controller using the ESP32 board, </span>
+                      <br>
+                      <span>integrating sensors such as LEDs, a buzzer, </span>
+                      <br>
+                      <span>and a button to enhance  </span>
+                      <br>
+                      <span>functionality and accessibility</span>
+          
+                    </div>
+                  </div>
+                  
+                </div>
+    
+              </div>
+              
+            </div>
+            <div class="swiper-slide ss-2">
+              <div class="project-container">
+                <div class="project1">
+                  <div class="explain-project">
+                    <div class="explain">
+                      <p>Fabflix</p>
+                      <span>Use: HTML, CSS, JS, Java, cloud Services</span>
+                      <br>
+                      <span>Developed and deployed a robust </span>
+                      <br> 
+                      <span>movie website enabling full-text search,  </span>
+                      <br>
+                      <span>auto-correct, and search by title, year, director, and star name. Implemented features such as adding movies to a shopping cart, processing payments, and displaying a confirmation page post-payment</span>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="project1">
+                  <div class="explain-project">
+                    <div class="explain">
+                      <p>Search Engine</p>
+                      <span>Use: python</span>
+                      <br>
+                      <span>Constructed an inverted index to efficiently organize and store analyzed words from HTML pages according to their positions</span>
+                      <br> 
+                      <span>Computed cosine similarity between query terms and the inverted index to identify the most relevant matches for the query</span>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+    
+              </div>
+            </div>
+            <div class="swiper-slide ss-3">
+              <div class="project-container">
+                <div class="project1">
+                  <div class="explain-project">
+                    <div class="explain">
+                      <p>Virtual memory</p>
+                      <span>Use: C lang</span>
+                      <br>
+                      <span>Implemented virtual memory capable of executing commands such as read, write, showmain, and showtable</span>
+                      <br> 
+                      <span>Managed page faults and updated the virtual memory table, including data insertion and victim page replacement </span>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="project1">
+                  <div class="explain-project">
+                    <div class="explain">
+                      <p>Network Communication  </p>
+                      <span>Use: Python</span>
+                      <br>
+                      <span>Processed and archived data from CSV files on the serve to optimize data accessibility and streamlining client request response times through enhanced database organization and retrieval strategies</span>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+    
+              </div>
+            </div>
+            <div class="swiper-slide ss-4">
+              <div class="project-container">
+                <div class="project1">
+                  <div class="explain-project">
+                    <div class="explain">
+                      <p>LikeLion X UCI Official Website </p><p>Hi-fi prototype</p>
+                      <span>Front-end</span>
+                      <br>
+                      <span>Developed a community-driven website to share insights about campus life and provide guidance on managing classes at UCI</span>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="project1">
+                  <div class="explain-project">
+                    <div class="explain">
+                      <p>Coming Soon....</p>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+    
+              </div>
+            </div>
           </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+    
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+    
+          
         </div>
-        
       </div>
     </div>
   </div>
   <div class="leadership-section" id="Leadership"> 
     <div class="Leadership-title"> <p>Leadership</p> </div>
+    <div class="Leadership-box">
+      <div class="Leadership1">
+        <div class="Likelion">
+          <img src="wics_logo.png" alt="wics logo">
+        </div>
+        <div class="explain-experience">
+          <div class="experience">
+            <p>WICS mentorship </p>
+            <span class="title">Mentor</span>
+            <br>
+            <span>Guided undergraduate students in exploring academic </span>
+            <br> 
+            <span>and career paths in computer science, </span>
+            <br>
+            <span>offering personalized advice on course selection</span>
+            <br>
+            <span>and research opportunities</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
     <div class="Leadership-box">
       <div class="Leadership1">
         <div class="Likelion">
@@ -203,6 +351,54 @@
         
       </div>
     </div>
+    <div class="Leadership-box">
+      <div class="Leadership1">
+        <div class="Likelion">
+          <img src="likelion-logo.png" alt="likelion logo">
+        </div>
+        <div class="explain-experience">
+          <div class="experience">
+            <p>Virtual Hackathon, Soma World By LIKELION </p>
+            <span class="title">Team leader</span>
+            <br>
+            <span>Led the development of a cutting-edge website</span>
+            <br> 
+            <span>dedicated to searching for biosimilars,</span>
+            <br>
+            <span>revolutionizing access to affordable medication, </span>
+            <br>
+            <span>and addressing a critical need in the healthcare industry</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="Leadership-box">
+      <div class="Leadership1">
+        <div class="Likelion uump-logo">
+          <img src="uump-logo.png" alt="LLUS logo">
+        </div>
+        <div class="explain-experience">
+          <div class="experience">
+            <p>Undeclared and Undecided Mentorship Program (UUMP) </p>
+            <span class="title">Mentor</span>
+            <br>
+            <span>Synthesized communication skills</span>
+            <br> 
+            <span>ito establish robust mentoring relationships </span>
+            <br>
+            <span>and foster a culture of knowledge-sharing</span>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
   </div>
+
+
+
+
+  <script src="script.js"></script>
 </body>
 </html>
